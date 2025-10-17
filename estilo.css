@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sawarabi Mincho", serif;
+    background-color: #053A34;
+    max-width: 1440px;
+}
+
+header {
+    background-color: #053A34;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 125px;
+    padding: 10px 40px;
+    font-family: "Sawarabi Mincho", serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 150px;
+}
+
+nav a {
+    text-decoration: dashed;
+    color: #DDA15E;
+    font-size: 22px;
+}
+
+a.ativo {
+    color: #FEFAE0;
+    text-decoration: underline #DDA15E;
+}
+
+nav a:hover {
+    color: #FEFAE0;
+    text-decoration: underline #DDA15E;
+
+}
+
+.logo {
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#subtopo {
+    background-image: url(imagens/imgfundo.png);
+    width: 100%;
+    min-height: 480px;
+}
+
+.tituloprincipal {
+    color: #ffffff;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+.subtituloprincipal {
+    color: #ffffff;
+    font-size: 40px;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+}
+
+.meio {
+    margin-top: 40px;
+    width: 100%;
+    height: 853px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#cardapio {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#imagem6 {
+    height: 427px;
+    width: 624px;
+
+}
+
+#imagem5 {
+    height: 426px;
+    width: 641px;
+    justify-self: end;
+}
+
+.simbolo {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+}
+
+.botao {
+    height: 99px;
+    width: 300px;
+    background-color: #DDA15E;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.botao>a {
+    font-size: 55px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#sobre {
+    grid-column: 2/3;
+    display: flex;
+    justify-self: center;
+    font-size: 40px;
+    color: #CE0000;
+    margin-top: 50px;
+}
+
+.linha-sobre {
+    width: 536px;
+    display: flex;
+    justify-self: center;
+}
+
+hr {
+    background-color: #CE0000;
+    height: 1px;
+    border: none;
+}
+
+.texto1 {
+    text-align: center;
+    margin-top: 25px;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.sabermais {
+    margin-top: 10px;
+    height: 55px;
+    width: 268px;
+    background-color: #DDA15E;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sabermais>a {
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.chamativo {
+    margin-top: 100px;
+    display: flex;
+    justify-self: center;
+
+}
+
+.logo2 {
+    margin-top: 200px;
+    display: flex;
+    justify-self: center;
+}
+
+.funcionamento {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#hora {
+    margin-top: 50px;
+    font-size: 30px;
+    color: #CE0000;
+    display: flex;
+    justify-self: center;
+}
+
+.horario1 {
+    margin-top: 35px;
+    margin-right: 10px;
+    font-size: 20px;
+    text-align: right;
+    color: #ffffff;
+}
+
+.horario2 {
+    margin-top: 35px;
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: left;
+    color: #ffffff;
+    grid-column: 2/3;
+}
+
+.linha-hora {
+    width: 4px;
+    height: 175px;
+    background-color: #CE0000;
+    border: none;
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+}
+
+#contato {
+    margin-top: 70px;
+    text-align: center;
+    color: #CE0000;
+    font-size: 30px;
+}
+
+#num {
+    margin-top: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+
+/*Cardápio*/
+
+.titulo {
+    font-size: 80px;
+    color: #CE0000;
+    text-align: center;
+}
+
+.logoclara {
+    display: block;
+    margin: 50px auto;
+}
+
+.divisao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.subtitulo {
+    margin-top: 100px;
+    font-size: 50px;
+    color: #DDA15E;
+    text-align: center;
+    grid-column: 1/3;
+}
+
+.linha {
+    width: 1052px;
+    height: 4px;
+    background-color: #DDA15E;
+    margin: 0 auto;
+    border: none;
+    grid-column: 1/3;
+}
+
+.tex2 {
+    margin-top: 200px;
+    margin-left: 50px;
+    color: #CE0000;
+    font-size: 35px;
+}
+
+.tex {
+    margin-top: 30px;
+    margin-left: 50px;
+    color: #CE0000;
+    font-size: 35px;
+}
+
+.itens {
+    margin-top: 50px;
+    margin-left: 25px;
+    color: #283618;
+    font-size: 25px;
+    grid-column: 1/2;
+}
+
+.retangulos {
+    grid-column: 2/3;
+}
+
+.voltar {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 55px;
+    width: 268px;
+    background-color: #DDA15E;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+    font-family: "Jaini Purva", system-ui;
+}
+
+.voltar>a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/*Sobre Nós*/
+
+.somos {
+    background-color: #283618;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h1 {
+    text-align: center;
+    grid-column: 1/2;
+    color: #DDA15E;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.texto-somos {
+    font-size: 25px;
+    color: #ffffff;
+    margin-left: 50px;
+    grid-column: 1/2;
+    text-indent: 30px;
+}
+
+#local {
+    grid-column: 2/3;
+    margin-bottom: 20px;
+}
