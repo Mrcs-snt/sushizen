@@ -8,6 +8,17 @@ body {
     font-family: "Sawarabi Mincho", serif;
     background-color: #053A34;
     max-width: 1440px;
+    margin: 0 auto;
+    border: 1px solid #000000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#aberturamenu {
+    display: none;
 }
 
 header {
@@ -53,41 +64,37 @@ nav a:hover {
     background-image: url(imagens/imgfundo.png);
     width: 100%;
     min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.container {
+    position: relative;
+    margin-bottom: 5%;
+    margin-left: 5%;
 }
 
 .tituloprincipal {
     color: #ffffff;
     font-size: 60px;
-    position: absolute;
-    top: 50%;
-    left: 5%;
 }
 
 .subtituloprincipal {
     color: #ffffff;
     font-size: 40px;
-    position: absolute;
-    top: 60%;
-    left: 5%;
 }
 
 .meio {
     margin-top: 40px;
     width: 100%;
-    height: 853px;
+    min-height: 853px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 }
-#imagem6 {
-    height: 427px;
-    width: 624px;
-
-}
 
 #imagem5 {
-    height: 426px;
-    width: 641px;
     justify-self: end;
 }
 
@@ -168,6 +175,7 @@ hr {
     margin-top: 100px;
     display: flex;
     justify-self: center;
+
 
 }
 
@@ -344,4 +352,349 @@ h1 {
 #local {
     grid-column: 2/3;
     margin-bottom: 20px;
+}
+
+.agrupar {
+    width: 100%;
+}
+
+@media screen and (max-width:1440px) {
+    body {
+        border: none;
+    }
+}
+
+@media screen and (max-width:1025px) {
+    #imagem6 {
+        max-width: 100%;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    #imagem5 {
+        max-width: 100%;
+        height: auto;
+        margin-top: 12px;
+    }
+}
+
+@media screen and (max-width:770px) {
+
+    /*Página inicial*/
+
+    #topo {
+        flex-direction: column;
+        min-height: fit-content;
+        align-items: center;
+        padding-bottom: 20px;
+        padding: 10px 15px;
+    }
+
+    .logo {
+        margin: 0px;
+    }
+
+    #menu>ul {
+        text-align: center;
+        height: 0px;
+        overflow: hidden;
+        transition: height 0.3s ease;
+        gap: 30px;
+    }
+
+    ul>li {
+        min-width: 200px;
+    }
+
+    a.ativo {
+        color: #DDA15E;
+        text-decoration: none;
+        border-radius: 20px;
+        background-color: #ffffff;
+    }
+
+    nav a {
+        width: 100%;
+        text-decoration: dashed;
+        color: #ffffff;
+        font-size: 22px;
+        display: block;
+        padding: 10px;
+    }
+
+    #aberturamenu:checked~#menu>ul {
+        height: fit-content;
+        margin-top: 20px;
+    }
+
+    #menu>ul>li {
+        background-color: #DDA15E;
+        border-radius: 20px;
+    }
+
+    #social {
+        display: none;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    #subtopo {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tituloprincipal {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #imagem6 {
+        max-width: 100%;
+        height: auto;
+        order: 1;
+    }
+
+    #imagem5 {
+        display: none;
+    }
+
+    #container-sobre {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto1 {
+        font-size: 20px;
+    }
+
+    .meio {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr repeat(2, 3fr);
+        justify-items: center;
+        max-width: 100%;
+    }
+
+    .simbolo {
+        display: none;
+    }
+
+    /*Sobre nós*/
+    h1 {
+        font-size: 30px;
+    }
+
+    .texto-somos {
+        font-size: 17px;
+    }
+
+    .logo2 {
+        width: 100px;
+    }
+
+    #hora {
+        font-size: 25px;
+    }
+
+    .horario1,
+    .horario2 {
+        font-size: 15px;
+    }
+
+    .linha-hora {
+        height: 130px;
+    }
+
+    #contato {
+        font-size: 25px;
+    }
+
+    #num {
+        font-size: 20px;
+    }
+
+    .voltar>a {
+        font-size: 20px;
+    }
+
+    .voltar {
+        width: 200px;
+        height: 40px;
+    }
+
+    /*Cardápio*/
+    .titulo {
+        font-size: 40px;
+    }
+
+    .subtitulo {
+        font-size: 30px;
+        grid-column: 1/3;
+    }
+
+    .logoclara {
+        width: 150px;
+    }
+
+    .tex2 {
+        font-size: 30px;
+        grid-column: 1/3;
+    }
+
+    .tex {
+        grid-column: 1/3;
+        font-size: 25px;
+
+    }
+
+    .itens {
+        font-size: 18px;
+    }
+
+    .retangulos {
+        width: 70%;
+        align-self: center;
+    }
+
+    .linha {
+        width: 90%;
+    }
+
+    .logoclara {
+        width: 120px;
+    }
+
+}
+
+@media screen and (max-width:430px) {
+    #menu>ul {
+        flex-direction: column;
+    }
+
+    #subtopo {
+        background-image: url(imagens/image\ 15.png);
+        min-height: 300px;
+    }
+
+
+    .container {
+        margin-bottom: 10%;
+        margin-left: 2%;
+        text-align: center;
+    }
+
+    .tituloprincipal {
+        font-size: 40px;
+    }
+
+    .subtituloprincipal {
+        font-size: 25px;
+    }
+
+    #imagem6 {
+        max-width: 90%;
+    }
+
+    .botao {
+        width: 200px;
+        height: 60px;
+    }
+
+    .botao>a {
+        font-size: 30px;
+    }
+
+    .sabermais {
+        width: 200px;
+        height: 45px;
+    }
+
+    .sabermais>a {
+        font-size: 20px;
+    }
+
+    .linha-sobre {
+        width: 300px;
+    }
+
+    .texto1 {
+        font-size: 18px;
+    }
+
+    .logo2 {
+        margin-top: 70px;
+    }
+
+    .linha-hora {
+        height: 170px;
+    }
+
+    #num {
+        font-size: 18px;
+    }
+
+    #contato {
+        font-size: 20px;
+    }
+
+    /*Sobre Nós*/
+
+    h1 {
+        font-size: 25px;
+        margin: 40px 0 20px 10px;
+    }
+
+    .texto-somos {
+        font-size: 11px;
+        margin-left: 3px;
+    }
+
+    /*Cardápio*/
+    .titulo {
+        font-size: 30px;
+    }
+    .divisao{
+        align-items: center;
+    }
+    .subtitulo {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+
+    .logoclara {
+        width: 100px;
+    }
+
+    .tex2 {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 100px;
+    }
+
+    .tex {
+        font-size: 20px;
+        grid-column: 1/3;
+        text-align: center;
+        margin-left: 0;
+        border-bottom: #CE0000 3px solid;
+        
+    }
+
+    .retangulos {
+        grid-column: 1/3;
+        max-width: 50%;
+        margin-left: 25%;
+        margin-top: 10%;
+
+    }
+
+    .itens {
+        font-size: 15px;
+        margin-left: 25%;
+        grid-column: 1/3;
+    }
 }

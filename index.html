@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sushi Zen - Home</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +14,10 @@
 
 <body>
     <header id="topo">
+        <label for="aberturamenu">
         <img class="logo" src="imagens/logo.png">
+        </label>
+        <input type="checkbox" id="aberturamenu">
         <nav id="menu">
             <ul>
                 <li> <a href="index.html" class="ativo">Home</a></li>
@@ -21,21 +25,23 @@
                 <li> <a href="cardapio.html">Cardápio</a></li>
             </ul>
         </nav>
-        <img src=" imagens/Frame 1.png">
+        <img src=" imagens/Frame 1.png" id="social">
     </header>
     <div id="subtopo">
-        <p class="tituloprincipal">Sushi Zen</p>
-        <p class="subtituloprincipal">O melhor sushi pertinho de você!</p>
+        <div class="container">
+            <p class="tituloprincipal">Sushi Zen</p>
+            <p class="subtituloprincipal">O melhor sushi pertinho de você!</p>
+        </div>
     </div>
     <div class="meio">
         <div class="botao">
             <a href="cardapio.html">Cardápio</a>
         </div>
-
-        <img src="imagens/image 6.png" id="imagem6">
-        <img src="imagens/image 5.png" id="imagem5">
-        <img src="imagens/ご飯 .png" class="simbolo">
-        <div>
+        <div id="imagem6"><img src="imagens/image 6.png" ></div>
+        <div id="imagem5"><img src="imagens/image 5.png" ></div>
+        <div class="simbolo"><img src="imagens/ご飯 .png" ></div>
+        
+        <div id="container-sobre">
             <p id="sobre">Sobre</p>
             <hr class="linha-sobre">
             <p class="texto1"> Sushi Zen é um restaurante de comida japonesa<br>
