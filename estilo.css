@@ -79,13 +79,6 @@ nav a:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 }
-
-#cardapio {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 #imagem6 {
     height: 427px;
     width: 624px;
